@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20sp"
+        android:elevation="5dp"
+        android:background="@drawable/background"
+        android:outlineProvider="bounds">
+
+        <ImageView
+            android:id="@+id/pic"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_pic" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Name"
+            android:text="Name"
+            android:gravity="center"
+            android:layout_below="@id/pic"
+            android:layout_marginBottom="20dp"
+            android:textSize="20sp"
+            android:textColor="#852e5b"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/address"
+            android:text="Address"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_below="@id/Name"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/message"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:layout_below="@id/address"
+            android:layout_marginBottom="20dp"/>
+        <LinearLayout
+            android:id="@+id/buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_reject"
+                android:id="@+id/reject"/>
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="2dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_accept"
+                android:id="@+id/accept"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>
